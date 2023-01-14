@@ -5,6 +5,7 @@ import { ListadoComponent } from './pages/listado/listado.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { AgregarComponent } from './pages/agregar/agregar.component';
 import { EditarComponent } from './pages/editar/editar.component';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -17,7 +18,8 @@ import { EditarComponent } from './pages/editar/editar.component';
     EditarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
   ]
 })
 export class HeroesModule { }
