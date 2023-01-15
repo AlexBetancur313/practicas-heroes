@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { PaginaErrorComponent } from './shared/pagina-error/pagina-error.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { HeroesModule } from './heroes/heroes.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    HeroesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
