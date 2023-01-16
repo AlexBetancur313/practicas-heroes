@@ -6,6 +6,7 @@ import { PaginaErrorComponent } from './shared/pagina-error/pagina-error.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    HeroesModule
+    HeroesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
