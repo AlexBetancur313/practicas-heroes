@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styles:[`
   .spacer {
   flex: 1 1 auto;
+},
+  mat-sidenav {
+  width: 200px;
+},
+.contenedor{
+  padding: 1em;
 }
   `]
 })

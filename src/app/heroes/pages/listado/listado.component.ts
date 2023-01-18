@@ -5,6 +5,13 @@ import { HeroesInterface } from '../../interfaces/heroes.interfaces';
 @Component({
   selector: 'app-listado',
   templateUrl: './listado.component.html',
+  styles:[
+    `
+    .img-card {
+  max-width: 300px;
+}
+    `
+  ]
 })
 export class ListadoComponent implements OnInit{
 
