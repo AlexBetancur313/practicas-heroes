@@ -1,5 +1,5 @@
 <mat-sidenav-container fullscreen>
-  <mat-sidenav #sidenav>
+  <mat-sidenav #sidenav style="width:300px">
     <mat-toolbar>
       <span>Menu de Opciones</span>
       <button mat-icon-button (click)="sidenav.toggle()">
@@ -38,7 +38,7 @@
   </mat-toolbar>
 
 
-  <div class="contenedor">
+  <div class="contenedor" style="padding: 2em">
     <router-outlet></router-outlet>
   </div>
 </mat-sidenav-container>

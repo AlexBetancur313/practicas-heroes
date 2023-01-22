@@ -8,6 +8,7 @@ import { EditarComponent } from './pages/editar/editar.component';
 import { MaterialModule } from '../material/material.module';
 import { HeroesRoutingModule } from './heroes-routing.module';
 import { BuscarComponent } from './pages/buscar/buscar.component';
+import { ImgPipe } from './pipes/img.pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BuscarComponent } from './pages/buscar/buscar.component';
     HeroeComponent,
     AgregarComponent,
     EditarComponent,
-    BuscarComponent
+    BuscarComponent,
+    ImgPipe
   ],
   imports: [
     CommonModule,

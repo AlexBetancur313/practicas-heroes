@@ -1,21 +1,35 @@
-<p>{{heroes | json}}</p>
+<h1>Listado de Heroes</h1>
 
-<mat-card class="img-card">
+<div class="container">
 
-  <mat-card-header>
-    <mat-card-title>Nombre Del Heroe</mat-card-title>
-    <mat-card-subtitle>Nombre real del Heroe</mat-card-subtitle>
-  </mat-card-header>
-  <img src="https://i.blogs.es/7d003c/haikyuu-/1366_521.jpeg" mat-card-image alt="">
-  <mat-card-content>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore facere delectus amet obcaecati tenetur, molestias
-    ad exercitationem sint deserunt cupiditate fugiat ullam repellat necessitatibus saepe repudiandae quam ab error
-    eligendi?
-  </mat-card-content>
+  <section class="row">
+    <article *ngFor="let heroe of heroes" class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 p-3">
 
+      <mat-card class="img-card">
 
-  <mat-card-actions>
-    <button mat-button color="warn">Editar</button>
-    <button mat-button color="primary">Ver mas...</button>
-  </mat-card-actions>
-</mat-card>
+        <mat-card-header>
+          <mat-card-title>{{heroe.superhero}}</mat-card-title>
+          <mat-card-subtitle>{{heroe.alter_ego}}</mat-card-subtitle>
+        </mat-card-header>
+        <img [src]="heroe.id | img" mat-card-image [alt]="heroe.id">
+
+        <mat-card-content>
+          <br>
+          <ul>
+            <li><b>Interprete: </b>{{heroe.characters}}</li>
+            <li><b>Primera Aparición: </b>{{heroe.first_appearance}}</li>
+            <li><b>Empresa Publicitadora:</b>{{heroe.publisher}}</li>
+            <li><b>Nombre Oficial: </b>{{heroe.superhero}}</li>
+          </ul>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button mat-button color="warn">Editar</button>
+          <button mat-button color="primary">Ver mas...</button>
+        </mat-card-actions>
+      </mat-card>
+      <mat-divider></mat-divider>
+    </article>
+  </section>
+
+</div>
